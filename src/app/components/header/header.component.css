@@ -1,0 +1,16 @@
+
+.logo{
+	max-height: 50px;
+}
+.link{
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: white;
+}
+
+.active-link{
+    color: rgb(0, 174, 255);
+}

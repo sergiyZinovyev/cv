@@ -1,0 +1,34 @@
+<header class="navbar-expand-sm navbar-dark bg-dark nav justify-content-between fixed-top">
+    <div>   
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            mat-icon-button
+            aria-label="Example icon-button with a heart icon"  
+            [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <a class="ml-1" href="#">
+            <img 
+                src="./assets/img/newproject_1_original.png" 
+                alt="no server connect"
+                width=auto
+                height=50>
+        </a> 
+    </div>
+
+    
+    <mat-menu #menu="matMenu" class="justify-content-start shadow-sm main-color"> 
+        <button class="link-color" mat-menu-item routerLink="home" routerLinkActive="active-link">{{"Home"}}</button>
+        <button class="link-color" mat-menu-item routerLink="" routerLinkActive="active-link">{{"My resume"}}</button>
+        <button class="link-color" mat-menu-item routerLink="portfolio" routerLinkActive="active-link">{{"Portfolio"}}</button>
+    </mat-menu>
+  
+    <div class="collapse navbar-collapse justify-content-start">
+        <a class="link mx-1" mat-button routerLink="home" routerLinkActive="active-link">{{"Home"}}</a>
+        <a class="link mx-1" mat-button href="./assets/files/CV.pdf" download>{{"My resume"}}</a>
+        <a class="link mx-1" mat-button routerLink="portfolio" routerLinkActive="active-link">{{"Portfolio"}}</a>
+    </div>
+</header>
+
