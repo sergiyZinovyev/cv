@@ -10,7 +10,7 @@ import { HomeService } from './share/home.service';
 import { BiographyComponent } from './components/biography/biography.component';
 import { ProgLangComponent } from './components/prog-lang/prog-lang.component';
 
-  
+   
 @NgModule({
   declarations: [HomeComponent, BiographyComponent, ProgLangComponent],
   imports: [
