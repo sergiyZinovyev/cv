@@ -17,9 +17,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatAutocompleteModule} from '@angular/material/autocomplete'; 
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider'; 
 
 import { MatSelectFilterModule } from 'mat-select-filter';
 
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+ 
  
 @NgModule({
   declarations: [],
@@ -43,7 +46,9 @@ import { MatSelectFilterModule } from 'mat-select-filter';
     MatTooltipModule,
     MatSelectFilterModule,
     MatAutocompleteModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDividerModule,
+    MatCarouselModule
   ]
 })
 export class MaterialModule { }

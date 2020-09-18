@@ -16,7 +16,7 @@ export interface IProjectLink {
     page?: string,
 }
 
-export interface IExpirience {
+export interface IExperience {
     organization: string,
     specialization?: string,
     date?: string,
@@ -34,8 +34,8 @@ export interface ICv {
     title: ITitle,
     contacts: IContacts,
     description?: string,
-    education?: Array<IExpirience>,
-    expirience?: Array<IExpirience>,
-    softvare?: Array<string>,
+    education?: Array<IExperience>,
+    experience?: Array<IExperience>,
+    software?: Array<string>,
     programmingLanguages?: Array<ISkill>
 }

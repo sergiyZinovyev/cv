@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscriber, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { HomeService } from './share/home.service';
 import { ICv } from './share/cv.interface'
  
@@ -9,7 +9,7 @@ import { ICv } from './share/cv.interface'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-
+ 
   cv: ICv;
   subCV: Subscription;
 
@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subCV = this.homeService.cv.subscribe((data: ICv) => {
       this.cv = data
+      console.log('this.cv: ', this.cv);
     })
   }
 

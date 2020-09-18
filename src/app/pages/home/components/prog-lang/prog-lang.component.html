@@ -1,0 +1,21 @@
+<div *ngFor='let language of languages' class="mb-5">
+    <div *ngIf='language.name'>
+        <div class="name">{{language.name}}</div>
+        <div class="mb-2">
+            <span *ngFor='let star of levelToStarArr(language.level)'>
+                <span *ngIf='star; else unset' class="material-icons gold">star</span>
+                <ng-template #unset>  
+                    <span class="material-icons gold">star_border</span>  
+                </ng-template> 
+            </span>
+        </div>
+        <div class="mb-2"><i>{{language.experience}}</i></div>
+        <div *ngIf='language.projectLinks'>
+            <div class=""><i>practice:</i></div>
+            <div *ngFor='let item of language.projectLinks' class="mb-2">
+                <div><a [href]="item.repository">{{item.repository}}</a></div>
+                <div><a [href]="item.page">{{item.page}}</a></div>
+            </div>
+        </div>
+    </div>
+</div>

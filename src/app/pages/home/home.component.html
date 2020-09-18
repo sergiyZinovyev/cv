@@ -1,19 +1,19 @@
-<div class="container pt-3 border border-primary">
-    <div class="row border border-secondary">
+<div class="container custom-container pt-3">
+    <div class="row">
 
-        <div class="col-md-8 border border-success">
-            <div class="row border border-warning">
-                <div class="col-md-4 border border-info my-2">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4 my-2">
                     <img src="./assets/img/myphoto.jpg" class="img-fluid mx-auto d-block" alt="...">
                 </div>
-                <div class="col-md-8 border border-info">
-                    <div class="row row-cols-1 border border-warning">
-                        <div class="col border border-info">
+                <div class="col-md-8">
+                    <div class="row row-cols-1">
+                        <div class="col">
                             <div class="h2 font-weight-bold">{{cv.title.name}}</div>
                             <div class="h6">{{cv.title.profession}}</div>
                             <div class="h6">({{cv.title.specialization}})</div>
                         </div>
-                        <div class="col border border-info mt-5">
+                        <div class="col mt-5">
                             <div>
                                 <img src="./assets/logo/phone.png" class="logo" alt="...">
                                 <img src="./assets/logo/skype.png" class="logo" alt="...">
@@ -37,39 +37,46 @@
                         </div>
                     </div> 
                 </div>
-            </div>
-            <div class="row border border-warning">
-                <div class="col-12 border border-info my-2">
+            </div> 
+            <div class="row my-2">
+                <div class="col-12 my-2">
                     <div class="text-indent">{{cv.description}}</div>
-                    <!-- <div class="text-indent">My personal qualities: analytical intelligence, organizational skills, willingness and desire to constantly learn new things and develop in the field of information technology.</div>
-                    <div class="text-indent">My hobbies: electronic music, art house films, reading classical literature, fitness classes. I am interested in new discoveries in science and technology</div> -->
                 </div>
             </div>
-            <div class="row border border-warning">
-                <div class="col-12 border border-info my-2">
-                    <div class="text-color-1">Education</div>
+            <mat-divider></mat-divider>
+            <div class="row my-2">
+                <div class="col-12 my-2">
+                    <div class="text-color-1 mb-3">Education</div>
+                    <app-biography [experience]='cv.education'></app-biography>
                 </div>
             </div>
-            <div class="row border border-warning">
-                <div class="col-12 border border-info my-2">
-                    <div class="text-color-1">Eperiance</div>
+            <mat-divider></mat-divider>
+            <div class="row my-2">
+                <div class="col-12 my-2">
+                    <div class="text-color-1 mb-3">Eperience</div>
+                    <app-biography [experience]='cv.experience'></app-biography>
                 </div>
             </div>
+            <mat-divider></mat-divider>
         </div>
 
-        <div class="col-md-4 border border-success">
+        <div class="col-md-4">
 
             <div class="h3 my-2">skills</div>
 
-            <div class="row border border-warning">
-                <div class="col-12 border border-info my-2">
-                    <div class="text-color-1">Software</div>
+            <div class="row my-2">
+                <div class="col-12 my-2">
+                    <div class="text-color-1 mb-3">Software</div>
+                    <div *ngFor='let item of cv.software' class="software-text">{{item}}</div>
                 </div>
             </div>
 
-            <div class="row border border-warning">
-                <div class="col-12 border border-info my-2">
-                    <div class="text-color-1">Programing Languages</div>
+            <mat-divider></mat-divider>
+ 
+            <div class="row my-2">
+                <div class="col-12 my-2">
+                    <div class="text-color-1 mb-3">Programing Languages</div>
+                    <app-prog-lang [languages]='cv.programmingLanguages'></app-prog-lang>
                 </div>
             </div>
 
