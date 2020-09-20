@@ -44,13 +44,19 @@ export class HomeService {
     experience: [
       {
         organization: 'Gal-Expo, JSC',
-        specialization: 'Head of the Department of Economics and Exhibition Technologies',
-        date: '2004-Present',
-        description: `Develop and support an Excel-based database for automatic document issuance, further client work and analysis. My current job is to develop a visitor database (Angular 10 / Node.js / MySQL):
+        specialization: 'Front-End Developer',
+        date: '2019-Present',
+        description: `My current job is to develop a visitor database (Angular 10 / Node.js / MySQL):
         - a base with all the necessary functionality;
         - application for registration for a specific event / exhibition (admin part, web form for the visitor with the possibility to register and receive an invitation);
         - an application for creating and managing mass mailings on a visitor base
         `
+      },
+      {
+        organization: 'Gal-Expo, JSC',
+        specialization: 'Head of the Department of Economics and Exhibition Technologies',
+        date: '2004-2019',
+        description: `Develop and support an Excel-based database for automatic document issuance, further client work and analysis.`
       },
       {
         organization: 'Synergy, LTD',

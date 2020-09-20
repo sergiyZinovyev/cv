@@ -26,4 +26,9 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     this.subPortfolio.unsubscribe();
   }
 
+
+
+
+
+
 }
